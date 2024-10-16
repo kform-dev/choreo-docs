@@ -18,7 +18,7 @@ nav:
     - Runner: 03-userguide/03_runner.md
     - Results: 03-userguide/04_results.md
   - Developer Guide:
-    - About: 04-devguide/01_about.md01-getting-started/01_getting_started.md
+    - About: 04-devguide/01_about.md
     - APIs: 
       - CRD: 04-devguide/apis/01_crd.md
     - Reconcilers:
