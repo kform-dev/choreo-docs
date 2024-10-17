@@ -1,4 +1,4 @@
-# About
+# Project
 
 A Choreo project is a collection of resources in the form of `.yaml` or `.yml` stored in a directory. `Choreo` uses 3 main sub-directories in a package called `crds`, `in` and `refs`. 
 

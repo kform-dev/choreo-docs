@@ -2,7 +2,7 @@
 
 In `Choreo`, `reconcilers` are essential components that synchronize the desired state of resources with their actual state in the system. They are tightly integrated with the API server, responding to changes in resources and executing their corresponding business logic.  
 
-When configuring a reconciler in Choreo, developers define two crucial aspects:
+When configuring a reconciler in `Choreo`, developers define two crucial aspects:
 
 - Attachment Specifications: Specifies which resources or resource types the reconciler attaches to within the system.
 - Business Logic: Dictates how the reconciler responds to changes, including the transformations it applies to resources.

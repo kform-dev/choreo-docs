@@ -5,4 +5,4 @@ our releases.
 
 Release summaries are available on GitHub:
 
-* [Kform](https://github.com/kform-dev/kform/releases)
+* [Choreo](https://github.com/kform-dev/choreo/releases)

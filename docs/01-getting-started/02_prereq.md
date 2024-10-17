@@ -8,7 +8,7 @@ All the choreo components run on both AMD and ARM based CPU
 
 We tested on WSL for windows and Linux and darwin OS.
 
-## choreoctl
+## Choreoctl
 
 Choreoctl is a command line tool for communicating with a Choreo server.
 
@@ -44,7 +44,7 @@ bash -c "$(curl -sL https://github.com/kform-dev/choreo/raw/main/install-choreoc
 ///
 
 
-## choreoctl autocomplete
+## Choreoctl autocomplete
 
 
 /// tab | bash

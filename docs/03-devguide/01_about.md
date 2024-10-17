@@ -8,7 +8,7 @@ At the heart of `Choreo` are its APIs, which are implemented using Custom Resour
 
 ## Reconcilers
 
-Reconcilers are another pivotal component of `Choreo`. They attach to a resource in Choreo and react to resource changes triggering necessary updates and adjustments based on their business logic. Choreo support the following reconciler types
+Reconcilers are another pivotal component of `Choreo`. They attach to a resource in Choreo and react to resource changes triggering necessary updates and adjustments based on their business logic. Choreo support the following reconciler types right now.
 
 - go template
 - jinja2 template
