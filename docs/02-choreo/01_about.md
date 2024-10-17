@@ -1,8 +1,12 @@
 # About
 
-A Choreo project is a collection of resources in the form of `.yaml` or `.yml` stored in a directory. `Choreo` uses 2 main sub-directories in a package called `crds` and `in`. The `crd` directory stores all the external API(s) and the `in` directory stores all the `business logic` aka `programs` and `input data` associated with a project. 
+A Choreo project is a collection of resources in the form of `.yaml` or `.yml` stored in a directory. `Choreo` uses 3 main sub-directories in a package called `crds`, `in` and `refs`. 
 
-`Choreo` always runs in the context of a single root package. A complete `Choreo` configuration consists of a root package and the tree of child packages (which includes the uostream packages called by the root choreo package).
+- The `crd` directory stores all the external API(s)
+- The `in` directory stores all the `business logic` aka `programs` and `input data` associated with a project. 
+- The `refs` directory stores all the references to child choreo packages that can include additional `crds`, `business logic` or `data`
+
+`Choreo` always runs in the context of a single root package. A complete `Choreo` configuration consists of a root package and optionally a tree of child packages (if upstream references are referenced in the package)
 
 In `Choreo` CLI, the root package is the working directory where `Choreo` is invoked/pointed at.
 
@@ -16,7 +20,7 @@ Reconcilers define the business logic associated to a resources. When defining a
 - Which resources the reconciler is interested in.
 - The reconciler business logic. 
 
-Reconcilers in choreo are built with a low code no code approach in mind to ease the adoption of the system.
+Reconcilers in choreo are built with a `low code no code` approach in mind to ease the adoption of the system.
 
 The following reconciler languages are supported:
 - starlark
