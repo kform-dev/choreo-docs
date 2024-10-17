@@ -18,10 +18,13 @@ Create and navigate into a new project directory:
 
 ```bash
 mkdir <project-name>; cd <project-name>
+git init -b main
 mkdir -p apis/
 ```
 
 initialize the go project
+
+!!! note update the go mod file using your project information
 
 ```bash
 go mod init github.com/dummy/test
@@ -29,11 +32,9 @@ go mod init github.com/dummy/test
 
 ### Prepare the Makefile
 
-```bash
-touch Makefile
-```
 
 ```bash
+cat <<"EOF" > Makefile
 ## Location to install dependencies to
 LOCALBIN ?= $(shell pwd)/bin
 $(LOCALBIN):
@@ -61,6 +62,7 @@ manifests: controller-gen ## Generate WebhookConfiguration, ClusterRole and Cust
 controller-gen: $(CONTROLLER_GEN) ## Download controller-gen locally if necessary.
 $(CONTROLLER_GEN): $(LOCALBIN)
 	test -s $(LOCALBIN)/controller-gen || GOBIN=$(LOCALBIN) go install sigs.k8s.io/controller-tools/cmd/controller-gen@$(CONTROLLER_TOOLS_VERSION)
+EOF
 ```
 
 ### Generate Manifests
@@ -79,19 +81,18 @@ mkdir -p apis/foo/v1alpha1
 
 create a doc.go file and the test_types.go file containing the api
 
-```bash
-touch apis/foo/v1alpha1/doc.go
-touch apis/foo/v1alpha1/test_types.go
-```
 
-```go
+```bash
+cat <<"EOF" > apis/foo/v1alpha1/doc.go
 // +kubebuilder:object:generate=true
 // +groupName=foo.example.com
 // Package v1alpha1 is the v1alpha1 version of the API.
 package v1alpha1
+EOF
 ```
 
-```go
+```bash
+cat <<"EOF" > apis/foo/v1alpha1/test_types.go
 package v1alpha1
 
 import (
@@ -124,6 +125,7 @@ type TestList struct {
 	metav1.ListMeta `json:"metadata,omitempty"`
 	Items           []Test `json:"items"`
 }
+EOF
 ```
 
 run go mod tidy to resolve the dependencies
@@ -138,11 +140,28 @@ generate your api
 make manifests
 ```
 
+start the server
+
+```bash
+choreoctl server start .
+```
+
+```bash
+choreoctl apply <<EOF
+apiVersion: foo.example.com/v1alpha1
+kind: Test
+metadata:
+  name: my-first-test
+EOF
+```
+
+
 ## Adding parameters with validation
 
 [crd generation](crd generation)
 
 [crd validation](crd validation)
+
 
 ```go
 type TestSpec struct {

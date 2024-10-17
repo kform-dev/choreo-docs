@@ -23,11 +23,12 @@ nav:
       - CRD: 04-devguide/apis/01_crd.md
       - Generating CRDs with kubebuilder: 04-devguide/apis/02_kubebuilder.md
     - Reconcilers:
-      - Reconciler hooks: 04-devguide/reconcilers/01_reconciler_hooks.md
-      - GoTemplate: 04-devguide/reconcilers/02_gotemplate.md
-      - Jinja2Template: 04-devguide/reconcilers/03_jinja2template.md
-      - Starlark: 04-devguide/reconcilers/04_starlark.md
-      - Libraries: 04-devguide/reconcilers/05_libraries.md
+      - Reconciler: 04-devguide/reconcilers/01_reconciler.md
+      - Reconciler Config: 04-devguide/reconcilers/02_config.md
+      - GoTemplate: 04-devguide/reconcilers/03_gotemplate.md
+      - Jinja2Template: 04-devguide/reconcilers/04_jinja2template.md
+      - Starlark: 04-devguide/reconcilers/05_starlark.md
+      - Libraries: 04-devguide/reconcilers/06_libraries.md
   - Examples/Tutorials:
     - About: 05-examples/01_about.md
   - Release Notes:
