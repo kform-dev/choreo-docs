@@ -76,9 +76,7 @@ a. the reconciler got loaded
 /// details | HelloWorld Reconciler
 
 ```yaml
---8<--
-https://raw.githubusercontent.com/kform-dev/choreo-examples/main/hello-world/reconcilers/example.com.helloworlds.helloworld.star
---8<--
+
 ```
 
 ///
@@ -94,9 +92,7 @@ b. The reconciler registered to be informed on any HelloWorld resource change
 /// details | HelloWorld Reconciler Hook
 
 ```yaml
---8<--
-https://raw.githubusercontent.com/kform-dev/choreo-examples/main/hello-world/reconcilers/example.com.helloworlds.helloworld.yaml
---8<--
+
 ```
 
 ///
@@ -106,9 +102,7 @@ c. The reconciler business logic got triggered by adding this HelloWorld manifes
 /// details | Hello World manifest
 
 ```yaml
---8<--
-https://raw.githubusercontent.com/kform-dev/choreo-examples/main/hello-world/in/example.com.helloworlds.test.yaml
---8<--
+
 ```
 
 ///

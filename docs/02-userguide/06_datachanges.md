@@ -1,5 +1,3 @@
 # Data input changes
 
-use files in the repo
-
-use choreoctl apply
+A user that leverage the system

@@ -12,7 +12,7 @@ In `Choreo` CLI, the root package is the working directory where `Choreo` is inv
 
 ## APIs and API extensions
 
-By using Custom resource definitions you can customize Choreo to orchestrate any use case. `CRDs` are stored in the `crd` directory of a choreo package and define the schema of the resource/api used to validate the resources consumed by the API. Choreo API is declarative 
+By using Custom resource definitions you can customize Choreo to orchestrate your specific use case. `CRDs` are stored in the `crd` directory of a choreo package. CRDs define the schema of the resource/api used to validate the resources consumed by the API. 
 
 ## Reconcilers
 
@@ -29,7 +29,7 @@ The following reconciler languages are supported:
 
 ## Libraries
 
-To allow for more reusable  
+Libraries can be leveraged for more reusable code.  
 
 ## UpstreamRefs
 

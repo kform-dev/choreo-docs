@@ -1,6 +1,6 @@
 # Runner
 
-The Choreo runner operates as the execution engine of the platform, capable of running in two distinct modes: Development Mode and Production Mode. These modes are tailored to support different stages of project development and deployment, ensuring both flexibility and robustness in handling resources and executing business logic.
+The Choreo runner operates as the execution engine of the system, capable of running in two distinct modes: Development Mode and Production Mode. These modes are tailored to support different stages of project development and deployment, ensuring both flexibility and robustness in handling resources and executing business logic.
 
 ## Resources
 
