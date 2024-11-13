@@ -17,6 +17,8 @@ Reconcilers in Choreo attach to resources using event handlers, enabling specifi
 - Watch Resource: These are the resources that the reconciler depends on for executing its logic. Changes in these resources can trigger the reconciler to act on the primary resource. Examples of watch resources are templates or external source of data
 - Own Resource: These are resources that the reconciler creates as a result of its operations. Managing these resources involves tracking dependencies and cleanup via owner references and finalizers. 
 
+Besides the resources it acts upin the reconciler config is also identified using a unique name and a conditionType is to be specified, which should be unique within the context of a resource.
+
 ## Reconciler Logic
 
 Reconcilers are designed to be idempotent and language-agnostic, allowing for diverse implementation strategies. In `Choreo` we aim for ease of use to optimize the development experience.
@@ -39,3 +41,8 @@ To address potential conflicts between multiple reconcilers acting on the same r
 
 !!!note "Developer Considerations: A developper when designing the system has to ensure a resource parameter is only owned by a given reconciler"
 
+## Reconciler location
+
+Reconcilers are stored in a subdirectory within the reconcilers directory of a choreo package.
+
+The reconciler config should be called `config.yaml` and is used to identify the reconcilers location. Based on the language you choose other files with their specific extensions are located within the same subdirectory where the `config.yaml` is located.

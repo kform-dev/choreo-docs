@@ -11,7 +11,8 @@ In the example below, only interfaces with spec.provider equal to srlinux.nokia.
 ```yaml
 apiVersion: choreo.kform.dev/v1alpha1
 kind: Reconciler
-# name can be inferred from the filename or from the for resource
+metadata:
+  name: interfaces.device.network.kubenet.dev.srlinux.nokia.com
 spec: 
   for: 
     group: device.network.kubenet.dev
@@ -35,20 +36,13 @@ Details:
 
 ## Jinja2 Template Business Logic
 
-Next, define your reconciler’s business logic as a Jinja2 template. The logic can be split across multiple files, but a main file ending with .main.jinja2 is required. Subsequent files can have any suffix and are referenced within the main template.
-
-We recommed using the following structure for the filenames:
-
-`<group>.<kind>.<name>.<suffix>.jinja2`
+Next, define your reconciler’s business logic as a Jinja2 template. The logic can be split across multiple files, but a main file main.jinja2 is required. Subsequent files can have any name and are referenced within the main template.
 
 ## Example
 
-Here’s an example of a Go template that creates a Config resource from an Interface resource:
+Here’s an example of a Jinja2 template that creates a Config resource from an Interface resource:
 
-Main template: device.kubenet.dev.interface.config.nokiasrl.main.jinja2
-    - Group: device.kubenet.dev
-    - Kind: Interface
-    - Name: config.nokiasrl.main
+Main template: `main.jinja2`
 
 ```yaml
 {%- import 'interface.jinja2' interface -%}
@@ -60,12 +54,6 @@ metadata:
   labels:
     config.sdcio.dev/targetName: {{ spec.node }}
     config.sdcio.dev/targetNamespace: {{ metadata.namespace }}
-  ownerReferences:
-  - apiVersion: {{ apiVersion }}
-    controller: true
-    kind: {{ kind }}
-    name: {{ metadata.name }}
-    uid: {{ metadata.uid }}
 spec:
   priority: 10
   config:
@@ -74,7 +62,7 @@ spec:
       {{ interface(spec) -}} 
 ```
 
-Sub Template: device.kubenet.dev.interface.config.nokiasrl.interface.jinja2
+Sub Template: `interface.jinja2`
 
 Here’s an example of a sub-template defined in a separate file, which is referenced in the main template:
 

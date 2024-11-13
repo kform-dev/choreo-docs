@@ -1,6 +1,6 @@
 # Reconciler Using Go Templates
 
-This chapter explains how to develop a reconciler using [Go templates](go template), powerful tools for transforming primary resources into child resources based on the input data. We will cover setting up the reconciler configuration and defining the business logic using [Go templates](go template).
+This chapter explains how to develop a reconciler using [Go templates](go template), tools for transforming primary resources into child resources based on the input data. We will cover setting up the reconciler configuration and defining the business logic using [Go templates](go template).
 
 ## Reconciler config
 
@@ -11,8 +11,10 @@ In the example below, only interfaces with spec.provider equal to srlinux.nokia.
 ```yaml
 apiVersion: choreo.kform.dev/v1alpha1
 kind: Reconciler
-# name can be inferred from the filename or from the for resource
+metadata:
+  name: interfaces.device.network.kubenet.dev.srlinux.nokia.com
 spec: 
+  conditionType: Ready
   for: 
     group: device.network.kubenet.dev
     version: v1alpha1
@@ -39,16 +41,13 @@ Next, define your reconciler’s business logic as a Go template. The logic can 
 
 We recommed using the following structure for the filenames:
 
-`<group>.<kind>.<name>.<suffix>.tpl`
+`<name>.tpl`
 
 ## Example
 
 Here’s an example of a Go template that creates a Config resource from an Interface resource:
 
-Main template: device.kubenet.dev.interface.config.nokiasrl.main.tpl
-    - Group: device.kubenet.dev
-    - Kind: Interface
-    - Name: config.nokiasrl.main
+Main template:` main.tpl`
 
 ```yaml
 apiVersion: config.sdcio.dev/v1alpha1
@@ -59,12 +58,6 @@ metadata:
   labels:
     config.sdcio.dev/targetName: {{ .spec.node }}
     config.sdcio.dev/targetNamespace: {{ .metadata.namespace }}
-  ownerReferences:
-  - apiVersion: {{ .apiVersion }}
-    controller: true
-    kind: {{ .kind }}
-    name: {{ .metadata.name }}
-    uid: {{ .metadata.uid }}
 spec:
   priority: 10
   config:
@@ -73,7 +66,7 @@ spec:
 {{- template "srlinterface" .spec}}
 ```
 
-Sub Template: device.kubenet.dev.interface.config.nokiasrl.interface.tpl
+Sub Template: `interface.tpl`
 
 Here’s an example of a sub-template defined in a separate file, which is referenced in the main template:
 
