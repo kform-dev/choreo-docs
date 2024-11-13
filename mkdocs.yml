@@ -2,9 +2,7 @@ site_name: Choreo
 nav:
   - Welcome to Choreo: index.md
   - Installation: 01-installation/01_installation.md
-  - Getting Started: 
-    - Getting started: 02-getting-started/01_getting_started.md
-    - Prerequisites: 02-getting-started/02_prereq.md
+  - Getting Started: 02-getting-started/01_getting_started.md
   - UserGuide: 
     - About: 03-userguide/01_about.md
     - Project: 03-userguide/02_project.md
@@ -27,7 +25,10 @@ nav:
   - Examples/Tutorials:
     - About: 05-examples/01_about.md
   - Release Notes:
-    - "0.0.1": 06-rn/0.0.1.md
+    - "0.0.14": 06-rn/0.0.14.md
+    - "0.0.15": 06-rn/0.0.15.md
+    - "0.0.16": 06-rn/0.0.16.md
+    - "0.0.17": 06-rn/0.0.17.md
   - Community: 
     - Community: 07-community/01_about.md
 

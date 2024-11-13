@@ -24,7 +24,7 @@ mkdir -p apis/
 
 initialize the go project
 
-!!! note update the go mod file using your project information
+!!! note "update the go mod file using your project information"
 
 ```bash
 go mod init github.com/dummy/test
