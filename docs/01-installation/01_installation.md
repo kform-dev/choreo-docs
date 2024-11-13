@@ -1,4 +1,4 @@
-# Prerequisites
+# Installation
 
 ## CPU architecture
 
@@ -10,7 +10,7 @@ We tested on WSL for windows and Linux and darwin OS.
 
 ## Choreoctl
 
-Choreoctl is a command line tool for communicating with a Choreo server.
+Choreoctl is a command line tool for interacting with `Choreo`.
 
 choreoctl is a single binary built for linux and Mac OS, distributed via [ghreleases][ghreleases]. It
 

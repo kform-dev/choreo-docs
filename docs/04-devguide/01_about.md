@@ -1,4 +1,4 @@
-# Developper guide
+# Developer guide
 
 The developper guide is designed to help developers extend Choreo with custom APIs and custom business logic (reconcilers) for their use cases.
 
@@ -10,6 +10,6 @@ At the heart of `Choreo` are its APIs, which are implemented using Custom Resour
 
 Reconcilers are another pivotal component of `Choreo`. They attach to a resource in Choreo and react to resource changes triggering necessary updates and adjustments based on their business logic. Choreo support the following reconciler types right now.
 
+- python/starlark
 - go template
 - jinja2 template
-- python/starlark

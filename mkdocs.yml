@@ -1,33 +1,35 @@
 site_name: Choreo
 nav:
   - Welcome to Choreo: index.md
+  - Installation: 01-installation/01_installation.md
   - Getting Started: 
-    - Getting started: 01-getting-started/01_getting_started.md
-    - Prerequisites: 01-getting-started/02_prereq.md
+    - Getting started: 02-getting-started/01_getting_started.md
+    - Prerequisites: 02-getting-started/02_prereq.md
   - UserGuide: 
-    - About: 02-userguide/01_about.md
-    - Project: 02-userguide/02_project.md
-    - Server: 02-userguide/03_server.md
-    - Runner: 02-userguide/04_runner.md
-    - Results: 02-userguide/05_results.md
+    - About: 03-userguide/01_about.md
+    - Project: 03-userguide/02_project.md
+    - Server: 03-userguide/03_server.md
+    - Runner: 03-userguide/04_runner.md
+    - Results: 03-userguide/05_results.md
+    - Data changes: 03-userguide/06_datachanges.md
   - Developer Guide:
-    - About: 03-devguide/01_about.md
+    - About: 04-devguide/01_about.md
     - APIs: 
-      - CRD: 03-devguide/apis/01_crd.md
-      - Generating CRDs with kubebuilder: 03-devguide/apis/02_kubebuilder.md
+      - CRD: 04-devguide/apis/01_crd.md
+      - Generating CRDs with kubebuilder: 04-devguide/apis/02_kubebuilder.md
     - Reconcilers:
-      - Reconciler: 03-devguide/reconcilers/01_reconciler.md
-      - Reconciler Config: 03-devguide/reconcilers/02_config.md
-      - GoTemplate: 03-devguide/reconcilers/03_gotemplate.md
-      - Jinja2Template: 03-devguide/reconcilers/04_jinja2template.md
-      - Starlark: 03-devguide/reconcilers/05_starlark.md
-      - Libraries: 03-devguide/reconcilers/06_libraries.md
+      - Reconciler: 04-devguide/reconcilers/01_reconciler.md
+      - Reconciler Config: 04-devguide/reconcilers/02_config.md
+      - GoTemplate: 04-devguide/reconcilers/03_gotemplate.md
+      - Jinja2Template: 04-devguide/reconcilers/04_jinja2template.md
+      - Starlark: 04-devguide/reconcilers/05_starlark.md
+      - Libraries: 04-devguide/reconcilers/06_libraries.md
   - Examples/Tutorials:
-    - About: 04-examples/01_about.md
+    - About: 05-examples/01_about.md
   - Release Notes:
-    - "0.0.1": 05-rn/0.0.1.md
+    - "0.0.1": 06-rn/0.0.1.md
   - Community: 
-    - Community: 06-community/01_about.md
+    - Community: 07-community/01_about.md
 
 site_author: Wim Henderickx
 site_description: >-
