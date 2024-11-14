@@ -2,132 +2,197 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.choreo.kform.dev/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/01-installation/01_installation/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/02-getting-started/01_getting_started/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/01_about/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/02_project/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/03_server/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/04_runner/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/05_results/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/03-userguide/06_datachanges/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/04-devguide/01_about/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/04-devguide/apis/01_crd/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/04-devguide/apis/02_kubebuilder/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/01_reconciler/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/02_config/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/03_gotemplate/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/gotemplate/01_overview/</loc>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/04_jinja2template/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/gotemplate/02_builtin/</loc>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/05_starlark/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/jinja/01_overview/</loc>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/06_libraries/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/jinja/02_builtin/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/01_overview/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/client_create/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/client_get/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/client_list/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/get_address/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/get_prefixlength/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/get_resource/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/get_subnetname/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/is_conditionready/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/is_ipv4/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/is_ipv6/</loc>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/04-devguide/reconcilers/starlark/builtin/reconcile_result/</loc>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/05-examples/01_about/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/06-rn/0.0.14/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/06-rn/0.0.15/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/06-rn/0.0.16/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/06-rn/0.0.17/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.choreo.kform.dev/06-rn/0.0.18/</loc>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/06-rn/rn/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/07-community/01_about/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.choreo.kform.dev/07-community/02_faq/</loc>
-         <lastmod>2024-11-13</lastmod>
+         <lastmod>2024-11-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
